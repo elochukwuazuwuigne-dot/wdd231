@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -188,34 +188,4 @@ footer {
 
 .social-links a:hover {
     text-decoration: underline;
-}
-
-/* LARGE SCREEN */
-
-@media screen and (min-width: 767px) {
-
-    #menu-button {
-        display: none;
-    }
-
-    #navigation {
-        display: block;
-    }
-
-    #navigation ul {
-        display: flex;
-        gap: 1rem;
-    }
-
-    header h1 {
-        font-size: 1.3rem;
-    }
-
-    #course-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-me {
-        grid-template-columns: 250px 1fr;
-    }
 }
