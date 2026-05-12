@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-/* COLOR SCHEME */
-
 :root {
     --primary-color: #003049;
     --secondary-color: #d62828;
-    --background-color: #f8f9fa;
+    --background-color: #f4f4f4;
     --text-color: #222;
     --white: #ffffff;
 }
@@ -25,7 +23,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -34,16 +32,15 @@ header {
 }
 
 header h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    white-space: nowrap;
 }
-
-/* MENU BUTTON */
 
 #menu-button {
     background: none;
     border: none;
-    color: var(--white);
-    font-size: 1.7rem;
+    color: white;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -68,9 +65,9 @@ header h1 {
 
 #navigation a {
     display: block;
-    padding: 1rem;
+    padding: 0.75rem;
     text-decoration: none;
-    color: var(--white);
+    color: white;
 }
 
 #navigation a:hover,
@@ -81,18 +78,16 @@ header h1 {
 /* MAIN */
 
 main {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     padding: 1rem;
 }
 
-/* HERO */
-
 .hero {
-    background-color: var(--white);
+    background-color: white;
     padding: 2rem;
-    border-radius: 10px;
     margin-bottom: 1rem;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -101,12 +96,32 @@ main {
     margin-bottom: 1rem;
 }
 
-/* SITE PURPOSE */
+/* ABOUT ME */
 
-.site-purpose {
-    background-color: var(--white);
+.about-me {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.about-me img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-text p {
     margin-bottom: 1rem;
 }
 
@@ -118,12 +133,12 @@ main {
 
 .filters button {
     padding: 0.7rem 1rem;
+    margin-right: 0.5rem;
     border: none;
     cursor: pointer;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
     border-radius: 5px;
-    margin-right: 0.5rem;
 }
 
 .filters button:hover {
@@ -138,7 +153,7 @@ main {
 }
 
 .course-card {
-    background-color: var(--white);
+    background-color: white;
     padding: 1rem;
     border-left: 6px solid var(--primary-color);
     border-radius: 8px;
@@ -151,16 +166,33 @@ main {
 /* FOOTER */
 
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
     text-align: center;
+    background-color: var(--primary-color);
+    color: white;
     padding: 1rem;
     margin-top: 2rem;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
 /* LARGE SCREEN */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
     #menu-button {
         display: none;
@@ -175,7 +207,15 @@ footer {
         gap: 1rem;
     }
 
+    header h1 {
+        font-size: 1.3rem;
+    }
+
     #course-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-me {
+        grid-template-columns: 250px 1fr;
     }
 }
