@@ -145,3 +145,68 @@ footer {
     color: white;
     text-decoration: none;
 }
+
+
+/* ---------------------------------- Dierctory Section ---------------------------------- */
+
+/* ---------------- DIRECTORY PAGE ---------------- */
+
+#members {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.member-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin-bottom: 0.5rem;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.member-card a:hover {
+    background-color: var(--primary-color);
+}
+
+/* MOBILE HEADER FIX */
+
+header {
+    position: relative;
+}
+
+#navigation.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+

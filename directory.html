@@ -1,0 +1,66 @@
+<!-- -------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD231 Course Home Page | Azuwuigne Kizito</title>
+
+    <meta name="description" content="WDD231 course home page created by Azuwuigne Kizito featuring web development projects, coursework, responsive design, and JavaScript functionality.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+<header>
+   <h1>Chamber Directory</h1>
+
+    <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Business Directory</h2>
+
+    <!-- THIS is where members will show -->
+    <div id="members"></div>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+        <a href="https://github.com/elochukwuazuwuigne-dot" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/elochukwu-kizito-azuwuigne-kizito-187293365/" target="_blank">LinkedIn</a>
+    </div>
+
+    <p>© <span id="currentyear"></span> | Azuwuigne Kizito | Nigeria</p>
+    <p id="lastModified"></p>
+
+</footer>
+
+<!-- JS MUST BE HERE (ONLY ONCE) -->
+<script src="scripts/directory.js" defer></script>
+
+</body>
+</html>
