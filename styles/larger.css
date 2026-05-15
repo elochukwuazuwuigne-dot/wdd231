@@ -1,5 +1,3 @@
-/* LARGE SCREEN */
-
 @media screen and (min-width: 767px) {
 
     #menu-button {
@@ -13,14 +11,6 @@
     #navigation ul {
         display: flex;
         gap: 1rem;
-    }
-
-    header h1 {
-        font-size: 1.3rem;
-    }
-
-    #course-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-me {

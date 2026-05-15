@@ -1,78 +1,40 @@
-// NAVIGATION
-
+// MENU TOGGLE
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#navigation");
 
 menuButton.addEventListener("click", () => {
-
     navigation.classList.toggle("open");
-
-    const isOpen = navigation.classList.contains("open");
-
-    menuButton.setAttribute("aria-expanded", isOpen);
+    menuButton.setAttribute(
+        "aria-expanded",
+        navigation.classList.contains("open")
+    );
 });
 
 // FOOTER DATES
-
-document.querySelector("#currentyear").textContent =
-    new Date().getFullYear();
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
 
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
-// COURSE ARRAY
-
+// COURSES
 const courses = [
-    {
-        code: "WDD130",
-        name: "Web Fundamentals",
-        credits: 2,
-        subject: "WDD",
-        completed: true
-    },
-
-    {
-        code: "WDD131",
-        name: "Dynamic Web Fundamentals",
-        credits: 2,
-        subject: "WDD",
-        completed: true
-    },
-
-    {
-        code: "CSE110",
-        name: "Programming Building Blocks",
-        credits: 2,
-        subject: "CSE",
-        completed: false
-    },
-
-    {
-        code: "CSE111",
-        name: "Programming with Functions",
-        credits: 2,
-        subject: "CSE",
-        completed: false
-    }
+    { code: "WDD130", name: "Web Fundamentals", credits: 2, subject: "WDD", completed: true },
+    { code: "WDD131", name: "Dynamic Web Fundamentals", credits: 2, subject: "WDD", completed: true },
+    { code: "CSE110", name: "Programming Building Blocks", credits: 2, subject: "CSE", completed: false },
+    { code: "CSE111", name: "Programming with Functions", credits: 2, subject: "CSE", completed: false }
 ];
 
-// DISPLAY COURSES
-
 const container = document.querySelector("#course-container");
+const totalDisplay = document.querySelector("#total-credits");
 
-function displayCourses(courseList) {
-
+function displayCourses(list) {
     container.innerHTML = "";
 
-    courseList.forEach(course => {
-
+    list.forEach(course => {
         const card = document.createElement("div");
-
         card.classList.add("course-card");
 
-        if (course.completed) {
-            card.classList.add("completed");
-        }
+        if (course.completed) card.classList.add("completed");
 
         card.innerHTML = `
             <h3>${course.code}</h3>
@@ -83,34 +45,19 @@ function displayCourses(courseList) {
         container.appendChild(card);
     });
 
-    // TOTAL CREDITS
-
-    const totalCredits = courseList.reduce(
-        (sum, course) => sum + course.credits,
-        0
-    );
-
-    document.querySelector("#total-credits").textContent =
-        `Total Credits: ${totalCredits}`;
+    const total = list.reduce((sum, c) => sum + c.credits, 0);
+    totalDisplay.textContent = `Total Credits: ${total}`;
 }
 
 displayCourses(courses);
 
-// FILTER BUTTONS
-
-document.querySelector("#all-btn").addEventListener("click", () => {
-    displayCourses(courses);
-});
+// FILTERS
+document.querySelector("#all-btn").addEventListener("click", () => displayCourses(courses));
 
 document.querySelector("#wdd-btn").addEventListener("click", () => {
-    const wddCourses = courses.filter(course => course.subject === "WDD");
-
-    displayCourses(wddCourses);
+    displayCourses(courses.filter(c => c.subject === "WDD"));
 });
 
 document.querySelector("#cse-btn").addEventListener("click", () => {
-    const cseCourses = courses.filter(course => course.subject === "CSE");
-
-    displayCourses(cseCourses);
+    displayCourses(courses.filter(c => c.subject === "CSE"));
 });
-
