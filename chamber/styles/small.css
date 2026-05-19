@@ -38,7 +38,7 @@ header {
     cursor: pointer;
 }
 
-/* NAV */
+/* NAVIGATION */
 #navigation {
     display: none;
 }
@@ -71,7 +71,7 @@ header {
 
 /* MAIN */
 main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
     padding: 1rem;
 }
@@ -83,6 +83,56 @@ main {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #f4b400;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+/* HOME GRID */
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 /* ABOUT */
@@ -127,32 +177,9 @@ main {
     background-color: #e6f4ea;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    background: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-}
 
 
-/* ---------------------------------- Dierctory Section ---------------------------------- */
-
-/* ---------------- DIRECTORY PAGE ---------------- */
-
+/*-------------------------------- DIRECTORY PAGE ----------------------*/
 #members {
     display: grid;
     grid-template-columns: 1fr;
@@ -197,55 +224,9 @@ footer {
     background-color: var(--primary-color);
 }
 
-/* ------------------------------ INDEX-SECTION -------------------------- */
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 300px;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.7rem 1.2rem;
-    background-color: #f4b400;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.home-grid {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.card {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
+/* SPOTLIGHTS */
 .spotlights {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 #spotlight-container {
@@ -265,6 +246,26 @@ footer {
     height: auto;
 }
 
+/* FOOTER */
+footer {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
 
 
 
