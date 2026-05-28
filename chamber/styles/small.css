@@ -267,5 +267,127 @@ footer {
     text-decoration: none;
 }
 
+/* ---------------------- JOIN SECTION ------------------------ */
 
+/* ---------------- JOIN PAGE ---------------- */
+
+.join-page {
+    display: grid;
+    gap: 2rem;
+}
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form-section label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.join-form-section input,
+.join-form-section textarea,
+.join-form-section select {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* MEMBERSHIP CARDS */
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.join-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.join-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.join-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join-card button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.join-card button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* THANK YOU PAGE */
+
+.thankyou-card {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* MODALS */
+
+dialog {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
