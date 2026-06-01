@@ -19,7 +19,8 @@ document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
 // WEATHER API
-const apiKey = "YOUR_API_KEY";
+// WEATHER API
+const apiKey = "5432f44896ccfbdb2c6dd8e543ce8593";
 
 const weatherURL =
 `https://api.openweathermap.org/data/2.5/forecast?lat=12.1328&lon=-86.2504&units=metric&appid=${apiKey}`;
@@ -63,9 +64,9 @@ async function getSpotlights() {
     const data = await response.json();
 
     const members = data.filter(member =>
-        member.membership === "Gold" ||
-        member.membership === "Silver"
-    );
+    member.membership === 3 ||
+    member.membership === 2
+);
 
     const randomMembers =
         members.sort(() => 0.5 - Math.random()).slice(0, 3);
