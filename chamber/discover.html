@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover | San Miguel Chamber of Commerce</title>
+
+    <meta name="description" content="Discover attractions, landmarks, and points of interest in San Miguel.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Discover San Miguel">
+    <meta property="og:description" content="Explore attractions and landmarks in San Miguel.">
+    <meta property="og:image" content="https://elochukwuazuwuigne-dot.github.io/wdd231/chamber/images/discover-hero.webp">
+    <meta property="og:url" content="https://elochukwuazuwuigne-dot.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/discover.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="discover-hero">
+
+        <h1>Discover San Miguel</h1>
+
+        <p>
+            Explore local attractions, cultural landmarks,
+            and community highlights that make San Miguel
+            a great place to live, visit, and do business.
+        </p>
+
+    </section>
+
+    <section class="visitor-message">
+
+        <h2>Visitor Information</h2>
+
+        <div id="visit-message"></div>
+
+    </section>
+
+    <section class="discover-section">
+
+        <h2>Places of Interest</h2>
+
+        <div id="discover-cards"></div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+
+        <a href="https://github.com/elochukwuazuwuigne-dot" target="_blank" rel="noopener">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/elochukwu-kizito-azuwuigne-kizito-187293365/" target="_blank" rel="noopener">
+            LinkedIn
+        </a>
+
+    </div>
+
+    <p>© <span id="currentyear"></span> | Azuwuigne Kizito | Nigeria</p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
