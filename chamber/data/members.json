@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Lagos Tech Hub",
+    "address": "12 Allen Avenue, Ikeja, Lagos",
+    "phone": "+234 801 111 2222",
+    "website": "https://lagostechhub.com",
+    "image": "techhub.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Naija Foods Ltd",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 802 333 4444",
+    "website": "https://naijafoods.com",
+    "image": "naijafoods.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Green Farms Nigeria",
+    "address": "Abuja Industrial Zone",
+    "phone": "+234 803 555 6666",
+    "website": "https://greenfarms.ng",
+    "image": "greenfarms.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Elite Motors",
+    "address": "Lekki Phase 1, Lagos",
+    "phone": "+234 804 777 8888",
+    "website": "https://elitemotors.ng",
+    "image": "elitemotors.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Bright Education Center",
+    "address": "Surulere, Lagos",
+    "phone": "+234 805 999 0000",
+    "website": "https://brightedu.ng",
+    "image": "education.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Skyline Construction",
+    "address": "Ikoyi, Lagos",
+    "phone": "+234 806 222 1111",
+    "website": "https://skyline.ng",
+    "image": "construction.jpg",
+    "membership": 1
+  },
+  {
+    "name": "HealthPlus Pharmacy",
+    "address": "Yaba, Lagos",
+    "phone": "+234 807 444 3333",
+    "website": "https://healthplus.ng",
+    "image": "pharmacy.jpg",
+    "membership": 2
+  }
+]
+
