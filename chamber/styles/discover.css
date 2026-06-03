@@ -1,0 +1,129 @@
+/* Discover Page */
+
+.discover-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.visitor-message {
+    margin-bottom: 2rem;
+}
+
+#visit-message {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-left: 5px solid #003049;
+    font-weight: bold;
+}
+
+#discover-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Card Layout - Small View */
+
+.discover-card {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+}
+
+.discover-card h2 {
+    grid-area: title;
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+.discover-card address {
+    grid-area: address;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.discover-card p {
+    grid-area: description;
+}
+
+.discover-card button {
+    grid-area: button;
+    padding: .75rem;
+    border: none;
+    background-color: #003049;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+/* ---------------------------- Medium section --------------------------- */
+
+@media screen and (min-width: 641px) {
+
+    .discover-card {
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+            "title title"
+            "image address"
+            "image description"
+            "image price"
+            "button button";
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        transition: .3s ease;
+        filter: brightness(1.1);
+    }
+}
+
+
+/* ---------------------------- Large section --------------------------- */    
+
+@media screen and (min-width: 1025px) {
+
+    #discover-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover-card {
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image price"
+            "button button";
+    }
+
+     .discover-card img:hover {
+        transform: scale(1.05);
+        transition: .3s ease;
+        filter: brightness(1.1);
+    }
+
+
+}
