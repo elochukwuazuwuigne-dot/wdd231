@@ -77,3 +77,59 @@
     }
 
 }
+
+
+/* ---------------------------- Discover.html --------------------------- */
+/* ---------------------------- Large section --------------------------- */    
+
+@media screen and (min-width: 1025px) {
+
+    #discover-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover-card {
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image price"
+            "button button";
+    }
+
+     .discover-card img:hover {
+        transform: scale(1.05);
+        transition: .3s ease;
+        filter: brightness(1.1);
+    }
+
+
+}
+
+
+
+/* ---------------------------- Medium section --------------------------- */
+
+@media screen and (min-width: 641px) {
+
+    .discover-card {
+        grid-template-columns: 300px 1fr;
+
+        grid-template-areas:
+            "title title"
+            "image address"
+            "image description"
+            "image price"
+            "button button";
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        transition: .3s ease;
+        filter: brightness(1.1);
+    }
+}
+
+
