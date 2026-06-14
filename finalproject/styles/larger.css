@@ -1,0 +1,179 @@
+@media screen and (min-width: 768px) {
+
+    /* ---------- NAVIGATION ---------- */
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        display: block;
+    }
+
+    #navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /* ---------- HOME GRID ---------- */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+/* ---------- ANIME GRID DESKTOP ---------- */
+@media screen and (min-width: 768px) {
+
+    .anime-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+    /* staggered "floating card" effect */
+    .anime-card:nth-child(odd) {
+        transform: translateY(5px);
+    }
+
+    .anime-card:nth-child(even) {
+        transform: translateY(-5px);
+    }
+
+    .anime-card:hover {
+        transform: translateX(10px) scale(1.02);
+    }
+}
+
+/* Tablet and desktop */
+@media screen and (min-width: 768px) {
+    .anime-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large monitors */
+@media screen and (min-width: 1200px) {
+    .anime-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+    /* ---------- CONTACT FORM ---------- */
+    .contact-form {
+        width: 60%;
+        margin: 2rem auto;
+        background: #1e1e1e;
+        padding: 2rem;
+        border-radius: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .contact-form button {
+        background: #ff9800;
+        color: black;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+/* ---------- MODAL ---------- */
+dialog {
+    border: none;
+    border-radius: 15px;
+    padding: 2rem;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    width: 90%;
+    max-width: 400px;
+}
+
+#dialog-content h2 {
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
+
+#close-dialog {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    background: #ff9800;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+}
+
+
+
+/* ---------------- THANK YOU PAGE ---------------- */
+
+@media screen and (min-width: 768px) {
+
+    .thankyou-card {
+        width: 50%;
+        margin: 5rem auto;
+        padding: 3rem;
+    }
+
+    .result {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    /* ---------- ATTRIBUTIONS PAGE ---------- */
+    main {
+        width: 60%;
+        margin: 3rem auto;
+    }
+
+    section {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    header {
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p {
+        font-size: 1.05rem;
+    }
+}

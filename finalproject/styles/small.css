@@ -1,1 +1,387 @@
+/* ---------- GENERAL ---------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #111;
+    --card-color: #1e1e1e;
+    --accent-color: #ff9800;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    position: static;
+    background-color: black;
+    padding: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#navigation {
+    display: none;
+}
+
+#navigation.open {
+    display: block;
+}
+
+#navigation ul {
+    list-style: none;
+}
+
+#navigation li {
+    margin: .8rem 0;
+}
+
+#navigation a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navigation a:hover,
+.active {
+    color: var(--accent-color);
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.cta-button:hover {
+    transform: translatey(8px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+    background-color: var(--card-color);
+
+    margin: 1rem;
+
+    padding: 1.5rem;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(255,255,255,.1);
+}
+
+.card h2 {
+    color: white;
+    margin-bottom: .8rem;
+}
+
+/* ---------- SPOTLIGHTS ---------- */
+
+.spotlights {
+    margin: 2rem 1rem;
+}
+
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    border-top: 2px solid var(--accent-color);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* ---------- ANIME GRID ---------- */
+.anime-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+
+/* ---------- ANIME CARD ---------- */
+.anime-card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    position: relative;
+}
+.anime-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.anime-card:hover {
+    transform: translateX(8px);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+}
+
+.anime-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.anime-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+/* ---------- MORE BUTTON ---------- */
+.more-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    background: #ff9800;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.more-btn:hover {
+    transform: scale(1.05);
+}
+
+/* -------------------------- Contact Page ---------------------------    */
+/* ---------- CONTACT FORM ---------- */
+
+.contact-page {
+    background:
+    linear-gradient(
+        rgba(0,0,0,.4),
+        rgba(0,0,0,.7)
+    ),
+    url("../images/anime-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+.contact-form {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    background: rgba(20, 20, 20, 0.88);
+    border-radius: 15px;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+}
+
+/* ---------- LABELS ---------- */
+.contact-form label {
+    display: block;
+    margin: 0.7rem 0 0.3rem;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+/* ---------- INPUTS ---------- */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 0.9rem;
+
+    margin-bottom: 1rem;
+
+    border-radius: 10px;
+    border: 1px solid #333;
+
+    background: #111;
+    color: #fff;
+
+    outline: none;
+}
+
+/* focus effect (important for accessibility score) */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #ff9800;
+}
+
+/* ---------- BUTTON ---------- */
+.contact-form button {
+    background: #ff9800;
+    color: #000;
+
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateX(6px);
+    background: #ffb347;
+}
+
+
+
+/* ---------- THANK YOU PAGE ---------- */
+.thankyou-card {
+    width: 90%;
+    margin: 3rem auto;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.thankyou-card h1 {
+    color: #ff9800;
+    margin-bottom: 1rem;
+}
+
+.result {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.result p {
+    margin: 0.5rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #ff9800;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+/* ---------- ATTRIBUTIONS PAGE ---------- */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #111;
+    color: #e0e0e0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #ff9800;
+}
+
+header h1 {
+    color: #ff9800;
+}
+
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+section {
+    background: rgba(30, 30, 30, 0.85);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+section h2 {
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 2px solid #ff9800;
+    margin-top: 2rem;
+}
