@@ -1,1 +1,170 @@
-
+[
+  {
+    "title": "Naruto",
+    "genre": "Action",
+    "year": 2002,
+    "rating": "✨8.4",
+    "image": "images/naruto.png"
+  },
+  {
+    "title": "One Piece",
+    "genre": "Adventure",
+    "year": 1999,
+    "rating": "✨9.0",
+    "image": "images/one-piece.png"
+  },
+  {
+    "title": "Jujutsu Kaisen",
+    "genre": "Supernatural",
+    "year": 2020,
+    "rating": "✨8.6",
+    "image": "images/jujustu-kaisen.png"
+  },
+  {
+    "title": "Solo Leveling",
+    "genre": "Fantasy",
+    "year": 2024,
+    "rating": "✨8.7",
+    "image": "images/solo-leveling.png"
+  },
+  {
+    "title": "Black Clover",
+    "genre": "Action",
+    "year": 2017,
+    "rating": "✨8.2",
+    "image": "images/black-clover.png"
+  },
+  {
+    "title": "Blue Lock",
+    "genre": "Sports",
+    "year": 2022,
+    "rating": "✨8.3",
+    "image": "images/bluelock.png"
+  },
+  {
+    "title": "Blue Box",
+    "genre": "Romance",
+    "year": 2024,
+    "rating": "✨8.1",
+    "images": "image/bluebox.png"
+  },
+  {
+    "title": "Attack on Titan",
+    "genre": "Action",
+    "year": 2013,
+    "rating": "✨9.1",
+    "image": "images/attack-on-titan.png"
+  },
+  {
+    "title": "Demon Slayer",
+    "genre": "Fantasy",
+    "year": 2019,
+    "rating": "✨8.6",
+    "image": "images/demon-slayer.png"
+  },
+  {
+    "title": "My Hero Academia",
+    "genre": "Superhero",
+    "year": 2016,
+    "rating": "✨8.0",
+    "image": "images/mha.png"
+  },
+  {
+    "title": "Death Note",
+    "genre": "Thriller",
+    "year": 2006,
+    "rating": "✨9.0",
+    "image": "images/deathnote.png"
+  },
+  {
+    "title": "Chainsaw Man",
+    "genre": "Action",
+    "year": 2022,
+    "rating": "✨8.5",
+    "image": "images/chainsaw-man.png"
+  },
+  {
+    "title": "Haikyuu!!",
+    "genre": "Sports",
+    "year": 2014,
+    "rating": "✨8.7",
+    "image": "images/haikyuu.png"
+  },
+  {
+    "title": "Spy x Family",
+    "genre": "Comedy",
+    "year": 2022,
+    "rating": "✨8.5",
+    "image": "images/spy-x-family.png"
+  },
+  {
+    "title": "Dr. Stone",
+    "genre": "Science Fiction",
+    "year": 2019,
+    "rating": "✨8.2",
+    "image": "images/dr.stone.png"
+  },
+  {
+    "title": "Tokyo Revengers",
+    "genre": "Action",
+    "year": 2021,
+    "rating": "✨7.9",
+    "image": "images/tokyo-revengers.png"
+  },
+  {
+    "title": "Hunter x Hunter",
+    "genre": "Adventure",
+    "year": 2011,
+    "rating": "✨9.0",
+    "image": "images/hunterx.png"
+  },
+  {
+    "title": "Vinland Saga",
+    "genre": "Historical",
+    "year": 2019,
+    "rating": "✨8.8",
+    "image": "images/vinlandsaga.png"
+  },
+  {
+    "title": "Hell's Paradise",
+    "genre": "Fantasy",
+    "year": 2022,
+    "rating": "✨8.0",
+    "image": "images/hell_paradise.png"
+  },
+  {
+    "title": "Fire Force",
+    "genre":"Action",
+    "year": 2020,
+    "rating": "✨7.9",
+    "image": "images/fire_force.png"
+  },
+  {
+    "title": "Kaiju No.8",
+    "genre": "Action",
+    "year": 2022,
+    "rating": "✨8.4",
+    "image": "images/kaiju_no8.png"
+  },
+  {
+    "title": "Dandadan",
+    "genre": "Supernatural",
+    "year": 2021,
+    "rating": "✨7.9",
+    "image": "images/dandadan.png"
+  },
+  {
+    "title": "Gachiakuta",
+    "genre": "Action",
+    "year": 2024,
+    "rating": "✨8.3",
+    "image": "images/gachiakuta.png"
+  },
+  {
+    "title": "The Promise Neverland",
+    "genre": "Thriller",
+    "year": 2019,
+    "rating": "✨8.6",
+    "image": "images/promise_neverland.png"
+  }
+]
