@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Anime Explorer</title>
+
+    <meta name="description" content="Discover popular anime series, genres, ratings, and recommendations with Anime Explorer.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anime Explorer">
+    <meta name="description" content="Browse Anime Explorer's collection of top-rated anime series, including action, fantasy, sports, romance, and adventure titles.">
+    <meta property="og:image" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/images/hero-large.webp">
+    <meta property="og:url" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/anime.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime.html" class="active">Anime Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Anime Collection</h1>
+            <p>Browse and discover top-rated anime series.</p>
+        </div>
+    </section>
+
+    <!-- ANIME CARDS WILL LOAD HERE -->
+    <section id="anime-container" class="anime-grid"></section>
+
+    <!-- MODAL -->
+    <dialog id="anime-dialog">
+        <div id="dialog-content"></div>
+        <button id="close-dialog">Close</button>
+    </dialog>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+        <a href="index.html">Home</a>
+        <a href="attributions.html">Attributions</a>
+        <a href="#">Video Demo</a>
+    </div>
+
+    <p>
+        © <span id="currentyear"></span> |
+        Azuwuigne Kizito |
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

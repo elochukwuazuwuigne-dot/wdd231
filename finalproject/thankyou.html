@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Anime Explorer</title>
+
+    <meta name="description" content="Discover popular anime series, genres, ratings, and recommendations with Anime Explorer.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anime Explorer">
+<meta name="description" content="Thank you for contacting Anime Explorer. Your anime recommendation and feedback have been received successfully.">    <meta property="og:image" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/images/hero-large.webp">
+    <meta property="og:url" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+    <script defer>
+        const params = new URLSearchParams(window.location.search);
+
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#name").textContent = params.get("name");
+            document.querySelector("#email").textContent = params.get("email");
+            document.querySelector("#favorite").textContent = params.get("favorite");
+            document.querySelector("#genre").textContent = params.get("genre");
+            document.querySelector("#message").textContent = params.get("message") || "No message provided.";
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="thankyou-card">
+
+        <h1>Thank You 🎉</h1>
+
+        <p>We received your submission successfully.</p>
+
+        <div class="result">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Favorite Anime:</strong> <span id="favorite"></span></p>
+            <p><strong>Genre:</strong> <span id="genre"></span></p>
+            <p><strong>Message:</strong> <span id="message"></span></p>
+        </div>
+
+        <a href="index.html" class="cta-button">Back to Home</a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>© <span id="currentyear"></span> | Azuwuigne Kizito | Nigeria</p>
+
+</footer>
+
+</body>
+</html>

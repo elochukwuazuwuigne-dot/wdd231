@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Anime Explorer</title>
+
+    <meta name="description" content="Discover popular anime series, genres, ratings, and recommendations with Anime Explorer.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anime Explorer">
+    <meta name="description" content="Contact Anime Explorer to share your favorite anime, send recommendations, and connect with fellow anime enthusiasts.">
+    <meta property="og:image" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/images/hero-large.webp">
+    <meta property="og:url" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body class="contact-page">
+    
+<header>
+
+    <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime.html">Anime Collection</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Share your favorite anime or send recommendations.</p>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="contact-form">
+
+        <form action="thankyou.html" method="get">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="favorite">Favorite Anime</label>
+            <input type="text" id="favorite" name="favorite" required>
+
+            <label for="genre">Preferred Genre</label>
+            <select id="genre" name="genre" required>
+                <option value="">Select</option>
+                <option value="Action">Action</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © <span id="currentyear"></span> |
+        Azuwuigne Kizito |
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>

@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Home | Anime Explorer</title>
+
+    <meta name="description" content="Discover popular anime series, genres, ratings, and recommendations with Anime Explorer.">
+    <meta name="author" content="Azuwuigne Kizito">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Anime Explorer">
+    <meta name="description" content="Welcome to Anime Explorer, your destination for discovering popular anime series, genres, ratings, and recommendations for fans of all ages.">
+    <meta property="og:image" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/images/hero-large.webp">
+    <meta property="og:url" content="https://elochukwuazuwuigne-dot.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <button id="menu-button" aria-label="Open Navigation Menu" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="anime.html">Anime Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <picture>
+            <source srcset="images/hero-large.png" media="(min-width: 768px)">
+            <img src="images/hero-small.png"
+                 alt="Anime characters collage"
+                 width="1200"
+                 height="600"
+                 loading="lazy">
+        </picture>
+
+        <div class="hero-content">
+
+            <h1>Anime Explorer</h1>
+
+            <p>
+                Discover amazing anime series, explore genres, and find your next favorite adventure.
+            </p>
+
+            <a href="anime.html" class="cta-button">
+                Explore Anime
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED ANIME -->
+    <div class="home-grid">
+
+        <section class="card">
+
+            <h2>Featured Anime</h2>
+
+            <p>
+                Dive into fan favorites such as Solo Leveling, Jujutsu Kaisen,
+                Attack on Titan, and One Piece. Explore thrilling adventures,
+                action-packed battles, and unforgettable stories.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Why Anime Explorer?</h2>
+
+            <p>
+                Anime Explorer provides ratings, genres, release years,
+                and detailed information about popular anime series.
+                Whether you're a new fan or a longtime otaku,
+                there's always something exciting to discover.
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- TOP PICKS -->
+    <section class="spotlights">
+
+        <h2>Top Picks</h2>
+
+        <div id="featured-container">
+
+            <!-- Generated with JavaScript later -->
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="social-links">
+
+        <a href="https://github.com/elochukwuazuwuigne-dot"
+           target="_blank"
+           rel="noopener">
+            GitHub
+        </a>
+
+        <a href="attributions.html">
+            Attributions
+        </a>
+
+        <a href="#">
+            Project Video
+        </a>
+
+    </div>
+
+    <p>
+        © <span id="currentyear"></span> |
+        Azuwuigne Kizito |
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
